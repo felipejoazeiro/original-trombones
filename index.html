@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<style>
+  /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+  #header-img{
+    max-width: 280px;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+  }
+  header{
+    position: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  #e6e6e6;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .site{
+    display: flex;
+    flex-direction: column;
+    padding-top: 115px;
+    max-width: auto;
+    width: 100%;
+    margin: 0 auto;
+    background-color:  #e6e6e6;
+    width: 100%;
+  }
+  div{
+    display: block;
+  }
+  #enter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #email{
+    padding: 5px;
+    margin: 5px;
+  }
+  .grid{
+    text-align: center;
+    width: 100%;
+    justify-content: space-around;
+
+  }
+  #how-it-works{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  #video{
+    max-width: 560px;
+    width: 100%;
+  }
+  #pricing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 3px;
+    max-width: 350px;
+    width: 70%;
+    margin: 20px auto 0px auto;
+  }
+  li{
+    list-style: none;
+  }
+  footer{
+    display: block;
+    padding: 5px;
+    background-color: #d9d9d9;
+    margin-top: 20px;
+  }
+  footer ul{
+    display: flex;
+    justify-content: flex-end;
+  }
+  span{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .btn{
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    border-radius: 2px;
+    background: yellow;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 700px){
+    header{
+      display: grid;
+      text-align: left;
+      grid-template-areas:
+        "header-img nav";
+      width: 95%;
+    }
+    #header-img{
+      grid-area: header-img;
+    }
+    nav li{
+      
+      padding: 0px 20px;
+    }
+    ul{
+      display: flex;
+      flex-direction: row;
+   }
+    .site{
+      padding-top: 40px;
+    }
+    #pricing{
+      display: grid;
+      grid-template-areas:
+        "box-one box-two box-three";
+      grid-column-gap: 20px;
+     }
+    #box-one{
+      grid-area: box-one;
+    }
+    #box-two{
+      grid-area: box-two;
+    }
+    #box-three{
+      grid-area: box-three;
+    }
+    .box{
+      width: 200px;
+    }
+  }
+</style>  
+</head>
+<body>
+  <header id="header">
+    <div class="logo"><img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="original trombones logo"></div>
+    <nav id="nav">
+      <ul>
+        <li><a href="#features" id="">Features</a></li>
+        <li><a href="#how-it-works" id="2">How it works</a></li>
+        <li><a href="#pricing" id="3">Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="site">
+    <section id="enter">
+      <h2>Handcrafted, home-made masterpieces</h2>
+      <form id="form">
+        <input name="email" id="email" type="email" placeholder="Enter your email address">
+        <input id="submit" type="submit" value="Get Started">
+      </form>
+    </section>
+    <div class="all">
+      <section id="features">
+        <div class="grid">
+          <h2>Premium materials</h2>
+          <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+        </div>
+        <div class="grid">
+          <h2>Fast shipping</h2>
+          <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+        </div>
+        <div class="grid">
+          <h2>Quality assurance</h2>
+          <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+        </div>
+      </section>
+      <section id="how-it-works">
+        <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"></iframe>
+      </section>
+      <section id="pricing">
+        <div class="box">
+          <div class="title" id="box-one">
+            <h1>Tenor Tronbone</h1>
+          </div>
+          <h2>$600</h2>
+          <ol>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+        <div class="box" id="box-two">
+          <div class="title">
+            <h1>Bass trombone</h1>
+          </div>
+          <h2>$900</h2>
+          <ol>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+        <div class="box" id="box-three">
+          <div class="title">
+            <h1>Valve Trombone</h1>
+          </div>
+          <h2>$1200</h2>
+          <ol>
+            <li>Plays similar to a Trumpet</li>
+            <li>Great for Jazz Bands</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+      </section>
+      <footer>
+        <ul>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Contact</li>
+        </ul>
+        <span>Copyright 2016, Original Trombones</span>
+      </footer>
+    </div>
+  </div>
+</body>  
